@@ -4,6 +4,10 @@
     <h1>{% block title %} Add a New Note {% endblock %}</h1>
     <form method="post">
     <div class="form-group">
+        <label for="content">Title Content</label>
+        <input type="text" name="title"
+               placeholder="Title content, max length 50" class="form-control" maxlength="100"
+               value="{{ request.form['title'] }}" autofocus></input>
         <label for="content">Note Content</label>
         <textarea type="text" name="content"
                placeholder="Note content, you can use Markdown syntax" class="form-control"
