@@ -9,7 +9,7 @@
             <div class="small text-muted">{{ note['created'] }}</div>
             <h2 class="card-title h4">{{ note['title'] }}</h2>
             <p>{{ note['content'] |safe }}</p>
-                <a class="btn btn-primary" href="#!">Read more →</a>
+                <a class="btn btn-primary" href="{{ url_for('postview', post_id={{ note['id'] }}) }}">Read more →</a>
         </div>
     </div>
     <hr>
