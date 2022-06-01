@@ -10,7 +10,7 @@
                 <!-- Post title-->
                 <h1 class="fw-bolder mb-1">{{ post.title }}</h1>
                 <!-- Post meta content-->
-                <div class="text-muted fst-italic mb-2">Posted on {{ post.created }}</div>
+                <div class="text-muted fst-italic mb-2">Posted on {{ post.get_created() }}</div>
                 <!-- Post categories-->
                 {% if post.tag %}
                     <a class="badge bg-secondary text-decoration-none link-light" href="{{ url_for('category_view', category=post.tag) }}">{{ post.tag }}</a>

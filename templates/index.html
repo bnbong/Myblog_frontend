@@ -6,7 +6,7 @@
     <div class="card mb-4">
         <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
         <div class="card-body">
-            <div class="small text-muted">{{ post.created }}</div>
+            <div class="small text-muted">{{ post.get_created() }}</div>
             <h2 class="card-title h4">{{ post.title }}</h2>
             <p>{{ post.content |safe }}</p>
                 <a class="btn btn-primary" href="{{ url_for('postview', post_id=post.id) }}">Read more →</a>
