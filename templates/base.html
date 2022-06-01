@@ -21,9 +21,9 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url_for('aboutme') }}">About Me</a></li>
-                        <li class="nav-item active">
+                        <!-- <li class="nav-item active">
                             <a class="nav-link" href="{{ url_for('create') }}">New Post</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
                     </ul>
                 </div>
@@ -38,6 +38,30 @@
                 </div>
             </div>
         </header>
+
+        <!-- Categories widget-->
+        <div class="card mb-4">
+            <div class="card-header">Categories</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!">My Daily Life</a></li>
+                            <li><a href="#!">IT</a></li>
+                            <li><a href="#!">Development</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!">Game</a></li>
+                            <li><a href="#!">Study</a></li>
+                            <li><a href="#!">Hobby</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Page content-->
         <div class="container">
             {% for message in get_flashed_messages() %}
@@ -61,28 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Categories widget-->
-                    <div class="card mb-4">
-                        <div class="card-header">Categories</div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">Web Design</a></li>
-                                        <li><a href="#!">HTML</a></li>
-                                        <li><a href="#!">Freebies</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">JavaScript</a></li>
-                                        <li><a href="#!">CSS</a></li>
-                                        <li><a href="#!">Tutorials</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <!-- Side widget-->
                     <div class="card mb-4">
                         <div class="card-header">Side Widget</div>
