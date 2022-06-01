@@ -46,16 +46,16 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <ul class="list-unstyled mb-0">
-                            <li><a href="#!">My Daily Life</a></li>
-                            <li><a href="#!">IT</a></li>
-                            <li><a href="#!">Development</a></li>
+                            <li><a href="{{ url_for('category_view', category=My_Daily_Life) }}">My Daily Life</a></li>
+                            <li><a href="{{ url_for('category_view', category=IT) }}">IT</a></li>
+                            <li><a href="{{ url_for('category_view', category=Development) }}">Development</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6">
                         <ul class="list-unstyled mb-0">
-                            <li><a href="#!">Game</a></li>
-                            <li><a href="#!">Study</a></li>
-                            <li><a href="#!">Hobby</a></li>
+                            <li><a href="{{ url_for('category_view', category=Game) }}">Game</a></li>
+                            <li><a href="{{ url_for('category_view', category=Study) }}">Study</a></li>
+                            <li><a href="{{ url_for('category_view', category=Hobby) }}">Hobby</a></li>
                         </ul>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                 </div>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; 이준혁(bnbong) 2022</p></div>
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; 이준혁(bbbong9@gmail.com) 2022</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
