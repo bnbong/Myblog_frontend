@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Blog Home</title>
+        <title>Bnbong's Blog</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -36,31 +36,31 @@
             </div>
         </header>
 
-        <!-- Categories widget-->
-        <div class="card mb-4">
-            <div class="card-header">Categories</div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <ul class="list-unstyled mb-0">
-                            <li><a href="{{ url_for('category_view', category='My_Daily_Life') }}">My Daily Life</a></li>
-                            <li><a href="{{ url_for('category_view', category='IT') }}">IT</a></li>
-                            <li><a href="{{ url_for('category_view', category='Development') }}">Development</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6">
-                        <ul class="list-unstyled mb-0">
-                            <li><a href="{{ url_for('category_view', category='Game') }}">Game</a></li>
-                            <li><a href="{{ url_for('category_view', category='Study') }}">Study</a></li>
-                            <li><a href="{{ url_for('category_view', category='Hobby') }}">Hobby</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Page content-->
         <div class="container">
+            <!-- Categories widget-->
+            <div class="card mb-4">
+                <div class="card-header">Categories</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li># <a href="{{ url_for('category_view', category='My_Daily_Life') }}">My Daily Life</a></li>
+                                <li># <a href="{{ url_for('category_view', category='IT') }}">IT</a></li>
+                                <li># <a href="{{ url_for('category_view', category='Development') }}">Development</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li># <a href="{{ url_for('category_view', category='Game') }}">Game</a></li>
+                                <li># <a href="{{ url_for('category_view', category='Study') }}">Study</a></li>
+                                <li># <a href="{{ url_for('category_view', category='Hobby') }}">Hobby</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {% for message in get_flashed_messages() %}
             <div class="alert alert-danger">{{ message }}</div>
             {% endfor %}
