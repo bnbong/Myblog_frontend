@@ -7,10 +7,10 @@
         <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
         <div class="card-body">
             <div class="small text-muted">{{ post.get_created() }}</div>
-            <h2 class="card-title h4">{{ post.title }}</h2>
             {% if post.tag %}
                     <a class="badge bg-secondary text-decoration-none link-light" href="{{ url_for('category_view', category=post.tag) }}">{{ post.tag }}</a>
             {% endif %}
+            <h2 class="card-title h4">{{ post.title }}</h2>
             <p style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{ post.content_preview }}</p>
                 <a class="btn btn-primary" href="{{ url_for('postview', post_id=post.id) }}">Read more →</a>
         </div>
