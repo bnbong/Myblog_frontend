@@ -4,21 +4,23 @@
 <div class="row">
     <div class="col-lg-8">
         <div class="row">
-            {% for post in posts.items %}
-            <div class="card mb-4">
-                {% if post.thumbnail_url %}
-                <a href="#!"><img class="card-img-top" src="{{ post.thumbnail_url }}" alt="..." /></a>
-                {% else %}
-                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                {% endif %}
-                <div class="card-body">
-                    <div class="small text-muted">{{ post.get_created() }}</div>
-                    {% if post.tag %}
-                            <a class="badge bg-secondary text-decoration-none link-light" href="{{ url_for('category_view', category=post.tag) }}">{{ post.tag }}</a>
+            <div class="col-lg-6">
+                {% for post in posts.items %}
+                <div class="card mb-4">
+                    {% if post.thumbnail_url %}
+                    <a href="#!"><img class="card-img-top" src="{{ post.thumbnail_url }}" alt="..." /></a>
+                    {% else %}
+                    <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
                     {% endif %}
-                    <h2 class="card-title h4">{{ post.title }}</h2>
-                    <p>{{ post.content_preview | safe}}</p>
-                        <a class="btn btn-primary" href="{{ url_for('postview', post_id=post.id) }}">Read more →</a>
+                    <div class="card-body">
+                        <div class="small text-muted">{{ post.get_created() }}</div>
+                        {% if post.tag %}
+                                <a class="badge bg-secondary text-decoration-none link-light" href="{{ url_for('category_view', category=post.tag) }}">{{ post.tag }}</a>
+                        {% endif %}
+                        <h2 class="card-title h4">{{ post.title }}</h2>
+                        <p>{{ post.content_preview | safe}}</p>
+                            <a class="btn btn-primary" href="{{ url_for('postview', post_id=post.id) }}">Read more →</a>
+                    </div>
                 </div>
             </div>
         </div>
