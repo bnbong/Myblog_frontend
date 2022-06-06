@@ -5,6 +5,8 @@
     <div class="card mb-4">
         {% if post.thumbnail_url != ''%}
         <a href="#!"><img class="card-img-top" src="{{ post.thumbnail_url }}" alt="..." /></a>
+        {% else %}
+        <a href="#!"><img class="card-img-top" src="../static/assets/1654495293268.jpg" alt="..." /></a>
         {% endif %}
         <div class="card-body">
             <div class="small text-muted">{{ post.get_created() }}</div>
