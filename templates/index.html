@@ -3,7 +3,7 @@
 {% block content %}
     {% for post in posts.items %}
     <div class="card mb-4">
-        {% if post.thumbnail_url %}
+        {% if post.thumbnail_url != ''%}
         <a href="#!"><img class="card-img-top" src="{{ post.thumbnail_url }}" alt="..." /></a>
         {% endif %}
         <div class="card-body">
