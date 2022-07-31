@@ -1,0 +1,11 @@
+Model Information:
+* title:	Floating Fox
+* source:	https://sketchfab.com/3d-models/floating-fox-497de71996cf4f4d86e387028938aceb
+* author:	Prinavu (https://sketchfab.com/Prinavu)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Floating Fox" (https://sketchfab.com/3d-models/floating-fox-497de71996cf4f4d86e387028938aceb) by Prinavu (https://sketchfab.com/Prinavu) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
